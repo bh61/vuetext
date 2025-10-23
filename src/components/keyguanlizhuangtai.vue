@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style scoped>
-.keyguanlizhuangtai {  /* 修改为与模板中一致的类名 */
+.keyguanlizhuangtai {  
     color: rgb(45, 147, 51);
 }
 </style>
