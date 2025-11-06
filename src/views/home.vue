@@ -15,11 +15,13 @@
         <Classbangding></Classbangding>
         <Stylebangding></Stylebangding>
         <Watchzhengting></Watchzhengting>
-        <BackgtoundEffect></BackgtoundEffect>
         <Mobanyinyong></Mobanyinyong>
         <Biaodanshujubangding></Biaodanshujubangding>
         <Zujianqiantao></Zujianqiantao>
-        <!-- <Zujianzucheng></Zujianzucheng> -->
+        <Zujianchuanzhiprops></Zujianchuanzhiprops>
+        <PropsjiaoyanA></PropsjiaoyanA>
+        
+        
     </div>
 </template>
 
@@ -37,11 +39,13 @@ import Jisuanshuxing from '../components/jisuanshuxing.vue';
 import Classbangding from '../components/classbangding.vue';
 import Stylebangding from '../components/stylebangding.vue';
 import Watchzhengting from '../components/watchzhengting.vue';
-import BackgtoundEffect from '../components/mobanyinyong.vue';
 import Mobanyinyong from '../components/mobanyinyong.vue';
 import Biaodanshujubangding from '../components/biaodanshujubangding.vue';
 import Zujianqiantao from '../components/zujianqiantao.vue';
-// import Zujianzucheng from '../components/zujianzucheng.vue';
+import Zujianchuanzhiprops from '../components/zujianchuanzhiprops.vue';
+import PropsjiaoyanA from '../components/propsjiaoyanA.vue';
+
+
 
 export default { 
     name: 'home',
@@ -59,11 +63,12 @@ export default {
         Classbangding,
         Stylebangding,
         Watchzhengting,
-        BackgtoundEffect,
         Mobanyinyong,
         Biaodanshujubangding,
         Zujianqiantao,
-        // Zujianzucheng
+        Zujianchuanzhiprops,
+        PropsjiaoyanA
+                              
     },
 }
 </script>
