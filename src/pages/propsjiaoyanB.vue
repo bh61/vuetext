@@ -37,7 +37,7 @@ props:{
 
 </script>
 <style scoped>
-·propsjiaoyanB{
+.propsjiaoyanB {
     color:red;
 }
 </style>
