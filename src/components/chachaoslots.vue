@@ -15,26 +15,39 @@
                 <h5>插槽2标题</h5>
             </template>
             <template #content>
-                <p>{{ msg }}</p>
+                <p>{{ msg1 }}</p>
             </template>
         </slotsxu>
+        <hr>
+        <h3>插槽3</h3>
+        <slotszaixu>
+            <template v-slot:headerer ="slotProps">
+                <h3>{{ current }}-- {{ slotProps.msg }}</h3>
+            </template>
+            <template #mainin = "slotProps">
+                <p>{{ slotProps.job}}</p>
+            </template>
+        </slotszaixu>
     </div>
 </template>
 
 <script>
 import slotsBase from '../pages/slotsBase.vue';
 import slotsxu from '../pages/slotsxu.vue';
+import slotszaixu from '../pages/slotszaixu.vue';
 export default {
     name:'chacaoslots',
     data() {
         return {
-            msg: 'hello world'
+            msg1: 'hello world',
+            current: '测试再续：'
         }
     },
     components: {
         slotsBase,
-        slotsxu
-    }
+        slotsxu,
+        slotszaixu
+    },
 }
 </script>
 
