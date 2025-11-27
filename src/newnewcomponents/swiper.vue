@@ -1,7 +1,8 @@
 <template>
   <div class="lunbotu">
     <hr>
-    <h3 class="name">轮播图</h3>
+    <h1 class="name">轮播图</h1>
+  
     
     <swiper 
       :modules="modules" 
@@ -14,6 +15,7 @@
       :scrollbar="{ draggable: true }"
       loop 
       @swiper="onSwiper" 
+      
       @slideChange="onSlideChange"
     >
       <swiper-slide v-for="(value, index) in slides" :key="index">

@@ -1,10 +1,8 @@
-import {
-    createRouter,
-    createWebHistory
-} from 'vue-router'
-import Home from '../views/home.vue'
-import New from '../views/new.vue'
-import Geleizujian from '../views/geleizujian.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/home.vue";
+import New from "../views/new.vue";
+import Geleizujian from "../views/geleizujian.vue";
+import Yidongzujian from "../views/yidongzujian.vue";
 
 const routes = [
     {
@@ -22,11 +20,16 @@ const routes = [
         name: 'Geleizujian',
         component: Geleizujian,
     },
-]
+    {
+        path: '/yidongzujian',
+        name: 'Yidongzujian',
+        component: Yidongzujian,
+    },
+];
 
 const router = createRouter({
     history: createWebHistory(),
     routes
-})
+});
 
-export default router
+export default router;
